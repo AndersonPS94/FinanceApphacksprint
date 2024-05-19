@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:anddroid="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#DEF6E1">
+
+
+    <TextView
+        android:id="@+id/tv_tittle"
+        android:layout_width="124dp"
+        android:layout_height="34dp"
+        android:textSize="30dp"
+        anddroid:layout_constraintEnd_toEndOf="parent"
+        anddroid:layout_constraintHorizontal_bias="0.573"
+        anddroid:layout_constraintStart_toStartOf="parent"
+        anddroid:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:textColor="#0068FE"
+        android:textSize="20dp"
+        anddroid:layout_constraintEnd_toEndOf="parent"
+        anddroid:layout_constraintHorizontal_bias="0.476"
+        anddroid:layout_constraintStart_toStartOf="parent"
+        anddroid:layout_constraintTop_toTopOf="parent"
+        tools:text="R$ 0,00" />
+
+    <ImageView
+        android:layout_width="76dp"
+        android:layout_height="78dp"
+        android:src="@drawable/baseline_local_gas_station_24"
+        anddroid:layout_constraintBottom_toBottomOf="parent"
+        anddroid:layout_constraintEnd_toEndOf="parent"
+        anddroid:layout_constraintHorizontal_bias="0.107"
+        anddroid:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
