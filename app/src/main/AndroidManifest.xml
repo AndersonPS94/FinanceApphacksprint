@@ -16,6 +16,9 @@
             android:name=".Create_Outcome"
             android:exported="false" />
         <activity
+            android:name=".cadastro_conta"
+            android:exported="false" />
+        <activity
             android:name=".splash"
             android:exported="true">
             <intent-filter>

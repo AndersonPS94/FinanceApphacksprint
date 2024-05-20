@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 
 @Entity
-data class Divida(
+data class Conta(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     val nome: String,

@@ -7,66 +7,70 @@
     android:layout_height="match_parent"
     tools:context=".Create_Outcome">
 
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="24dp"
-        android:text="Create an Outcome"
-        android:textSize="32sp"
-        android:textStyle="bold"
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="123dp"
+        android:background="@drawable/background_green"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Create an Outcome"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tv_title_label"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="344dp"
         android:text="Title"
-        android:textSize="16sp"
+        android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tv_title"
-        app:layout_constraintStart_toStartOf="@+id/tv_title"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="116dp"
         android:layout_marginEnd="24dp"
-        app:hintEnabled="false"
-        app:layout_constraintEnd_toEndOf="@+id/tv_title_label"
-        app:layout_constraintStart_toStartOf="@+id/tv_title_label"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title_label">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tie_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter the title"
-            android:textStyle="bold" />
+        app:hintEnabled="false">
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/tv_category_label"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="293dp"
         android:text="Category"
-        android:textSize="16sp"
+        android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tv_title"
-        app:layout_constraintStart_toStartOf="@+id/tv_title"
-        app:layout_constraintTop_toBottomOf="@+id/til_title" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_category"
@@ -80,28 +84,22 @@
         app:layout_constraintStart_toStartOf="@+id/tv_category_label"
         app:layout_constraintTop_toBottomOf="@+id/tv_category_label">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tie_category"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter the category"
-            android:textStyle="bold" />
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/tv_price_label"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="336dp"
         android:text="Price"
-        android:textSize="16sp"
+        android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/tv_title"
-        app:layout_constraintStart_toStartOf="@+id/tv_title"
-        app:layout_constraintTop_toBottomOf="@+id/til_category" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_price"
@@ -115,13 +113,6 @@
         app:layout_constraintStart_toStartOf="@+id/tv_price_label"
         app:layout_constraintTop_toBottomOf="@+id/tv_price_label">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/tie_price"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter the price"
-            android:textStyle="bold" />
-
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -129,10 +120,60 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/ic_launcher_background"
         android:text="CREATE"
+        android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tie_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="568dp"
+        android:hint="Enter the price"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tie_category"
+        android:layout_width="381dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="436dp"
+        android:hint="Enter the category"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="388dp"
+        android:layout_height="81dp"
+        android:hint="Insira o Titulo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/registration_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTitle"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

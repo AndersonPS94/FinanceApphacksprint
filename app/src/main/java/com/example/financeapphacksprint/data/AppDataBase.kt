@@ -4,7 +4,7 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 
 
-@Database(entities = [Divida::class], version = 1)
+@Database(entities = [Conta::class], version = 1)
 abstract class AppDataBase: RoomDatabase() {
-    abstract fun DividaDao(): DividaDao
+    abstract fun DividaDao(): ContaDao
 }
