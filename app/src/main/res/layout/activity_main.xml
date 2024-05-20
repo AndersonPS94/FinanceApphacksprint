@@ -47,8 +47,8 @@
             app:layout_constraintVertical_bias="0.154" />
 
         <LinearLayout
-            android:layout_width="400dp"
-            android:layout_height="82dp"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
@@ -58,9 +58,9 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
+                android:background="#DDF5E0"
                 android:text="House"
-                android:textSize="18sp"
-                android:background="#DDF5E0"/>
+                android:textSize="18sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btCar"
@@ -69,9 +69,9 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
+                android:background="#DDF5E0"
                 android:text="Car"
-                android:textSize="18sp"
-                android:background="#DDF5E0"/>
+                android:textSize="18sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btFood"
@@ -80,9 +80,9 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
+                android:background="#DDF5E0"
                 android:text="food"
-                android:textSize="18sp"
-                android:background="#DDF5E0"/>
+                android:textSize="18sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btAll"
@@ -91,9 +91,9 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
+                android:background="#DDF5E0"
                 android:text="All"
-                android:textSize="18sp"
-                android:background="#DDF5E0" />
+                android:textSize="18sp" />
 
 
         </LinearLayout>
