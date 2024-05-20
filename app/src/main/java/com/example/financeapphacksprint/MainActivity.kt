@@ -4,19 +4,20 @@ package com.example.financeapphacksprint
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.RecyclerView
 
-                     //Utilizar API 34 ou superior
+//Utilizar API 34 ou superior
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+
+        val adapterList: RecyclerView = findViewById(R.id.tv_tittle)
+
+        val list = listOf<String>("Title 1", "Title 2", "Title 3")
+        val adapter = AdapterList(list)
+
+        adapterList.adapter = adapter
     }
 }
