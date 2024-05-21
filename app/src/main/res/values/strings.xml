@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FinanceApp (hacksprint)</string>
+    <string name="item_label">Items</string>
 </resources>
