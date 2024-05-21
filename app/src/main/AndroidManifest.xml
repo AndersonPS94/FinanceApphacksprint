@@ -13,13 +13,13 @@
         android:theme="@style/Theme.FinanceApphacksprint"
         tools:targetApi="31">
         <activity
-            android:name=".Create_Outcome"
+            android:name=".presentation.Create_Outcome"
             android:exported="false" />
         <activity
             android:name=".cadastro_conta"
             android:exported="false" />
         <activity
-            android:name=".splash"
+            android:name=".presentation.splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,7 +31,7 @@
             android:name=".splash_screen_activity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

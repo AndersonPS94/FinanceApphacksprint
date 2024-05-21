@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DDF5E0"
-    tools:context=".Create_Outcome">
+    tools:context=".presentation.Create_Outcome">
 
     <LinearLayout
         android:id="@+id/linearLayout"

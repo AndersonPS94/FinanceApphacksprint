@@ -1,11 +1,11 @@
-package com.example.financeapphacksprint
+package com.example.financeapphacksprint.presentation
 
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.RecyclerView
+import com.example.financeapphacksprint.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 //Utilizar API 34 ou superior

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity"
+    tools:context=".presentation.MainActivity"
     android:background="@color/ic_launcher_background"
     android:id="@+id/spalshscreen">
 

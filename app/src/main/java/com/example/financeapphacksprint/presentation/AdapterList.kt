@@ -1,10 +1,11 @@
-package com.example.financeapphacksprint
+package com.example.financeapphacksprint.presentation
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.financeapphacksprint.R
 
 class AdapterList(private val titles: List<String>): RecyclerView.Adapter<AdapterViewHolder>() {
 
