@@ -8,6 +8,11 @@ android {
     namespace = "com.example.financeapphacksprint"
     compileSdk = 34
 
+
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.financeapphacksprint"
         minSdk = 24
