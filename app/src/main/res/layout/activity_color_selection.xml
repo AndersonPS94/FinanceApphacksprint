@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#DDF5E0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    tools:context=".presentation.ColorSelection">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="406dp"
+        android:layout_height="150dp"
+        android:background="@drawable/background_green"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/categoryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Select the category color"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/circle_red"
+        android:padding="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatButton5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/circle_blue"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/circle_white"
+        android:padding="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatButton4"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/circle_black"
+        android:padding="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatButton3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/circle_green"
+        android:padding="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatButton2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="40dp"
+        android:background="@drawable/circle_yellow"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
