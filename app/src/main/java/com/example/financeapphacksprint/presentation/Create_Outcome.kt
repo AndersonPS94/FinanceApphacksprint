@@ -6,6 +6,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -32,6 +33,12 @@ class Create_Outcome : AppCompatActivity() {
 
 
             }
+
+        val titulo  = findViewById<EditText>(R.id.editTitle)
+        val valor = findViewById<EditText>(R.id.editprice)
+        val categoria = findViewById<AutoCompleteTextView>(R.id.auto_complete)
+
+
         val botaoCreate = findViewById<Button>(R.id.btn_create)
         val intentCreate = Intent(this, ColorSelection::class.java)
         botaoCreate.setOnClickListener {
