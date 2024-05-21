@@ -96,7 +96,7 @@
         android:text="Next"
         android:textColor="@color/black"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="667dp" />
+        tools:layout_editor_absoluteY="646dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

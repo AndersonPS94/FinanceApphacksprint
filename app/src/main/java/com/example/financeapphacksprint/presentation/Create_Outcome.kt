@@ -1,9 +1,11 @@
 package com.example.financeapphacksprint.presentation
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -27,9 +29,14 @@ class Create_Outcome : AppCompatActivity() {
             val itemSelected = adapterView.getItemAtPosition(i)
             Toast.makeText(this, "Selected: $itemSelected", Toast.LENGTH_SHORT).show()
 
+
+
+            }
+        val botaoCreate = findViewById<Button>(R.id.btn_create)
+        val intentCreate = Intent(this, ColorSelection::class.java)
+        botaoCreate.setOnClickListener {
+            startActivity(intentCreate)
         }
     }
 }
-
-
 //teste
