@@ -10,8 +10,6 @@
     tools:context=".presentation.ColorSelection">
 
     <LinearLayout
-
-
         android:id="@+id/linearLayout"
         android:layout_width="413dp"
         android:layout_height="171dp"
@@ -30,7 +28,6 @@
             android:background="@drawable/botao_volta"/>
 
         <TextView
-
             android:id="@+id/categoryTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,86 +40,68 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </LinearLayout>
 
-
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/btn_vermelho"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="33dp"
         android:layout_marginTop="97dp"
-        android:layout_marginEnd="308dp"
         android:background="@drawable/circle_red"
-        android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton5" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_branco"
+        app:layout_constraintStart_toStartOf="@id/btn_branco"
+        app:layout_constraintTop_toBottomOf="@+id/btn_branco" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton6"
+        android:id="@+id/btn_azul"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="97dp"
         android:background="@drawable/circle_blue"
-        android:padding="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/appCompatButton2"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toEndOf="@+id/appCompatButton"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton4" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_preto"
+        app:layout_constraintStart_toStartOf="@+id/btn_preto"
+        app:layout_constraintTop_toBottomOf="@+id/btn_preto" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton5"
+        android:id="@+id/btn_branco"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="199dp"
-        android:layout_marginEnd="308dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/circle_white"
-        android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_preto"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton4"
+        android:id="@+id/btn_preto"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="199dp"
-        android:layout_marginEnd="171dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/circle_black"
-        android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@id/btn_verde"
+        app:layout_constraintStart_toEndOf="@id/btn_branco"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton3"
+        android:id="@+id/btn_verde"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="310dp"
-        android:layout_marginTop="199dp"
-        android:layout_marginEnd="31dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/circle_green"
-        android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@id/btn_preto"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton2"
+        android:id="@+id/btn_amarelo"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="308dp"
-        android:layout_marginTop="372dp"
-        android:layout_marginEnd="33dp"
+        android:layout_marginTop="97dp"
         android:background="@drawable/circle_yellow"
-        android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@id/btn_verde"
+        app:layout_constraintStart_toStartOf="@+id/btn_verde"
+        app:layout_constraintTop_toBottomOf="@id/btn_verde" />
 
     <Button
         android:id="@+id/botaoNext"
@@ -136,8 +115,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton6"
         app:layout_constraintVertical_bias="0.934" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

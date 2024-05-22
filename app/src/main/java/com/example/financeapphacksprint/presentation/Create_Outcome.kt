@@ -31,8 +31,6 @@ class Create_Outcome : AppCompatActivity() {
             val itemSelected = adapterView.getItemAtPosition(i)
             Toast.makeText(this, "Selected: $itemSelected", Toast.LENGTH_SHORT).show()
 
-
-
             }
 
         val titulo  = findViewById<EditText>(R.id.editTitle)
@@ -44,6 +42,7 @@ class Create_Outcome : AppCompatActivity() {
         val intentCreate = Intent(this, ColorSelection::class.java)
         botaoCreate.setOnClickListener {
             startActivity(intentCreate)
+
         }
 
         val botaovoltahome = findViewById<ImageButton>(R.id.btn_volta_home)
