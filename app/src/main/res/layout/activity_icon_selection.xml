@@ -45,7 +45,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/iconCar"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="33dp"
@@ -55,22 +55,22 @@
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton5" />
+        app:layout_constraintTop_toBottomOf="@+id/iconHouse" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton6"
+        android:id="@+id/iconEletric"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginTop="100dp"
         android:background="@drawable/eletric"
         android:padding="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/appCompatButton2"
+        app:layout_constraintEnd_toStartOf="@+id/iconWater"
         app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toEndOf="@+id/appCompatButton"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton4" />
+        app:layout_constraintStart_toEndOf="@+id/iconCar"
+        app:layout_constraintTop_toBottomOf="@+id/iconFood" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton5"
+        android:id="@+id/iconFood"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="33dp"
@@ -83,7 +83,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton4"
+        android:id="@+id/iconHouse"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="170dp"
@@ -96,7 +96,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton3"
+        android:id="@+id/iconWifi"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="310dp"
@@ -109,7 +109,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton2"
+        android:id="@+id/iconWater"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="308dp"
@@ -134,7 +134,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton6"
+        app:layout_constraintTop_toBottomOf="@+id/iconEletric"
         app:layout_constraintVertical_bias="0.934" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

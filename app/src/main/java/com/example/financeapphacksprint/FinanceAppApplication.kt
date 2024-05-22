@@ -1,7 +1,6 @@
 package com.example.financeapphacksprint
 
 import android.app.Application
-import androidx.room.Database
 import androidx.room.Room
 import com.example.financeapphacksprint.data.AppDataBase
 
