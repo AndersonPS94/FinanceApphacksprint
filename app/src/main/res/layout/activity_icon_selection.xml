@@ -20,19 +20,19 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/btn_volta_create"
-            android:layout_marginTop="32dp"
-            android:layout_marginStart="16dp"
+            android:id="@+id/btn_volta_color_selection"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/botao_volta"/>
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/botao_volta" />
 
         <TextView
             android:id="@+id/categoryTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Select The Category Color"
+            android:text="Select The Category Icon"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="32sp"
@@ -43,78 +43,98 @@
 
     </LinearLayout>
 
+
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_vermelho"
+        android:id="@+id/iconCar"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_marginStart="33dp"
         android:layout_marginTop="97dp"
-        android:background="@drawable/circle_red"
-        app:layout_constraintEnd_toEndOf="@+id/btn_branco"
-        app:layout_constraintStart_toStartOf="@id/btn_branco"
-        app:layout_constraintTop_toBottomOf="@+id/btn_branco" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_azul"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="97dp"
-        android:background="@drawable/circle_blue"
-        app:layout_constraintEnd_toEndOf="@+id/btn_preto"
-        app:layout_constraintStart_toStartOf="@+id/btn_preto"
-        app:layout_constraintTop_toBottomOf="@+id/btn_preto" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_branco"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/circle_white"
-        app:layout_constraintEnd_toStartOf="@+id/btn_preto"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_preto"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/circle_black"
-        app:layout_constraintEnd_toStartOf="@id/btn_verde"
-        app:layout_constraintStart_toEndOf="@id/btn_branco"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_verde"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/circle_green"
+        android:layout_marginEnd="308dp"
+        android:background="@drawable/car"
+        android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btn_preto"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconHouse" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_amarelo"
+        android:id="@+id/iconEletric"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginTop="97dp"
-        android:background="@drawable/circle_yellow"
-        app:layout_constraintEnd_toEndOf="@id/btn_verde"
-        app:layout_constraintStart_toStartOf="@+id/btn_verde"
-        app:layout_constraintTop_toBottomOf="@id/btn_verde" />
+        android:layout_marginTop="100dp"
+        android:background="@drawable/eletric"
+        android:padding="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/iconWater"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toEndOf="@+id/iconCar"
+        app:layout_constraintTop_toBottomOf="@+id/iconFood" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/iconFood"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="308dp"
+        android:background="@drawable/food"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/iconHouse"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="171dp"
+        android:background="@drawable/home"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/iconWifi"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/wifi"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/iconWater"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/water_drop"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/botaoNext"
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
         android:backgroundTint="@color/ic_launcher_background"
-        android:text="Next"
-        android:textStyle="bold"
+        android:text="Done"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconEletric"
         app:layout_constraintVertical_bias="0.934" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
