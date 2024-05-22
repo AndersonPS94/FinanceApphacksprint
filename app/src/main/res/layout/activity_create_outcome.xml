@@ -18,11 +18,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageButton
+            android:id="@+id/btn_volta_home"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/botao_volta"/>
+
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:text="Create an Outcome"
             android:textAlignment="center"
             android:textColor="@color/black"

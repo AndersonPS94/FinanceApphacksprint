@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -43,6 +44,12 @@ class Create_Outcome : AppCompatActivity() {
         val intentCreate = Intent(this, ColorSelection::class.java)
         botaoCreate.setOnClickListener {
             startActivity(intentCreate)
+        }
+
+        val botaovoltahome = findViewById<ImageButton>(R.id.btn_volta_home)
+        val intentHome = Intent(this, MainActivity::class.java)
+        botaovoltahome.setOnClickListener {
+            startActivity(intentHome)
         }
     }
 }

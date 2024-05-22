@@ -10,6 +10,8 @@
     tools:context=".presentation.ColorSelection">
 
     <LinearLayout
+
+
         android:id="@+id/linearLayout"
         android:layout_width="413dp"
         android:layout_height="171dp"
@@ -19,12 +21,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageButton
+            android:id="@+id/btn_volta_create"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/botao_volta"/>
+
         <TextView
+
             android:id="@+id/categoryTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="Select the category color"
+            android:layout_marginTop="20dp"
+            android:text="Select The Category Color"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="32sp"
@@ -117,14 +128,16 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_margin="24dp"
         android:backgroundTint="@color/ic_launcher_background"
         android:text="Next"
+        android:textStyle="bold"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton6"
+        app:layout_constraintVertical_bias="0.934" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
