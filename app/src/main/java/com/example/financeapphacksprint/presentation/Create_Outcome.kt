@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.financeapphacksprint.R
+import com.google.android.material.snackbar.Snackbar
 
 class Create_Outcome : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,16 +37,30 @@ class Create_Outcome : AppCompatActivity() {
         val titulo  = findViewById<EditText>(R.id.editTitle)
         val valor = findViewById<EditText>(R.id.editprice)
         val categoria = findViewById<AutoCompleteTextView>(R.id.auto_complete)
-
-
         val botaoCreate = findViewById<Button>(R.id.btn_create)
-        val intentCreate = Intent(this, ColorSelection::class.java)
-        botaoCreate.setOnClickListener {
-            startActivity(intentCreate)
 
+        botaoCreate.setOnClickListener {
+
+            val title: String = titulo.text.toString()
+            val price: String = valor.text.toString()
+            val category: String = categoria.text.toString()
+
+            if (title == "" || price == "" || category == "") {
+
+                Snackbar.make(
+                    titulo,
+                    "Por favor, preencha todos os campos corretamente.",
+                    Snackbar.LENGTH_SHORT
+                ).show()
+            } else {
+                val intentCreate = Intent(this, ColorSelection::class.java)
+
+                startActivity(intentCreate)
+            }
         }
 
         val botaovoltahome = findViewById<ImageButton>(R.id.btn_volta_home)
+
         val intentHome = Intent(this, MainActivity::class.java)
         botaovoltahome.setOnClickListener {
             startActivity(intentHome)
