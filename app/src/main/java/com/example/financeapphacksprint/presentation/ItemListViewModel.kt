@@ -9,7 +9,7 @@ import com.example.financeapphacksprint.data.ContaDao
 
     class ItemListViewModel (contaDao: ContaDao): ViewModel(){
 
-    val ItemListLiveData = LiveData<List<Conta>> = contaDao.getAll()
+   // val ItemListLiveData = LiveData<List<Conta>> = contaDao.getAll()
 
     companion object {
         fun create (application: Application): ItemListViewModel {

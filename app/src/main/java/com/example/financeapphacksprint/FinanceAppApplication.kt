@@ -20,5 +20,4 @@ class FinanceAppApplication : Application() {
     fun getAppDataBase(): AppDataBase {
         return dataBase
     }
-    // Chamar a função do banco de dados para acessar o banco de dados da aplicação
 }
