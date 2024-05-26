@@ -43,87 +43,72 @@
 
     </LinearLayout>
 
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/iconCar"
+    <ImageButton
+        android:id="@+id/icon_car"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="97dp"
-        android:layout_marginEnd="308dp"
+        android:layout_marginTop="96dp"
         android:background="@drawable/car"
         android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iconHouse" />
+        app:layout_constraintEnd_toEndOf="@+id/icon_food"
+        app:layout_constraintStart_toStartOf="@+id/icon_food"
+        app:layout_constraintTop_toBottomOf="@+id/icon_food" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/iconEletric"
+    <ImageButton
+        android:id="@+id/icon_eletric"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="96dp"
         android:background="@drawable/eletric"
         android:padding="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/iconWater"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toEndOf="@+id/iconCar"
-        app:layout_constraintTop_toBottomOf="@+id/iconFood" />
+        app:layout_constraintEnd_toEndOf="@+id/icon_house"
+        app:layout_constraintStart_toStartOf="@+id/icon_house"
+        app:layout_constraintTop_toBottomOf="@+id/icon_house" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/iconFood"
+    <ImageButton
+        android:id="@+id/icon_food"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="199dp"
-        android:layout_marginEnd="308dp"
+        android:layout_margin="32dp"
         android:background="@drawable/food"
         android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/iconHouse"
+    <ImageButton
+        android:id="@+id/icon_house"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="199dp"
-        android:layout_marginEnd="171dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/home"
         android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/icon_wifi"
+        app:layout_constraintStart_toEndOf="@+id/icon_food"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/iconWifi"
+    <ImageButton
+        android:id="@+id/icon_wifi"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="310dp"
-        android:layout_marginTop="199dp"
-        android:layout_marginEnd="31dp"
+        android:layout_margin="32dp"
         android:background="@drawable/wifi"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/iconWater"
+    <ImageButton
+        android:id="@+id/icon_water"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="308dp"
-        android:layout_marginTop="372dp"
-        android:layout_marginEnd="33dp"
+        android:layout_marginTop="96dp"
         android:background="@drawable/water_drop"
         android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/icon_wifi"
+        app:layout_constraintStart_toStartOf="@+id/icon_wifi"
+        app:layout_constraintTop_toBottomOf="@+id/icon_wifi" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_done"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="24dp"
@@ -133,8 +118,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iconEletric"
-        app:layout_constraintVertical_bias="0.934" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

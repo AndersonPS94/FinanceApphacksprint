@@ -23,10 +23,32 @@ class ColorSelection : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val botaonext = findViewById<Button>(R.id.botaoNext)
-        val intent2 = Intent(this, IconSelection::class.java)
-        botaonext.setOnClickListener {
-            startActivity(intent2)
+        val btnPreto = findViewById<ImageButton>(R.id.btn_preto)
+        val btnVermelho = findViewById<ImageButton>(R.id.btn_vermelho)
+        val btnVerde = findViewById<ImageButton>(R.id.btn_verde)
+        val btnAzul = findViewById<ImageButton>(R.id.btn_azul)
+        val btnAmarelo = findViewById<ImageButton>(R.id.btn_amarelo)
+        val btnBranco = findViewById<ImageButton>(R.id.btn_branco)
+
+        val intent3 = Intent(this, IconSelection::class.java)
+
+        btnPreto.setOnClickListener {
+            startActivity(intent3)
+        }
+        btnVermelho.setOnClickListener {
+            startActivity(intent3)
+        }
+        btnVerde.setOnClickListener {
+            startActivity(intent3)
+        }
+        btnAzul.setOnClickListener {
+            startActivity(intent3)
+        }
+        btnAmarelo.setOnClickListener {
+            startActivity(intent3)
+        }
+        btnBranco.setOnClickListener {
+            startActivity(intent3)
         }
     }
 }

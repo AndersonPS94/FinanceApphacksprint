@@ -46,12 +46,12 @@
 
     <ImageView
         android:id="@+id/iv_circle_color"
-        android:layout_width="66dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="40dp"
+        android:layout_height="70dp"
         android:src="@drawable/circle_blue"
+        anddroid:layout_constraintBottom_toBottomOf="parent"
         anddroid:layout_constraintEnd_toEndOf="parent"
-        anddroid:layout_constraintHorizontal_bias="0.017"
+        anddroid:layout_constraintHorizontal_bias="0.005"
         anddroid:layout_constraintStart_toStartOf="parent"
         anddroid:layout_constraintTop_toTopOf="parent" />
 

@@ -21,5 +21,32 @@ class IconSelection : AppCompatActivity() {
         botaoVolta.setOnClickListener {
             startActivity(intent)
         }
+
+        val btnFood = findViewById<ImageButton>(R.id.icon_food)
+        val btnHouse = findViewById<ImageButton>(R.id.icon_house)
+        val btnWifi = findViewById<ImageButton>(R.id.icon_wifi)
+        val btnCar = findViewById<ImageButton>(R.id.icon_car)
+        val btnEletric = findViewById<ImageButton>(R.id.icon_eletric)
+        val btnWater = findViewById<ImageButton>(R.id.icon_water)
+
+        val intent2 = Intent(this, MainActivity::class.java)
+        btnFood.setOnClickListener {
+            startActivity(intent2)
+        }
+        btnHouse.setOnClickListener {
+            startActivity(intent2)
+        }
+        btnWifi.setOnClickListener {
+            startActivity(intent2)
+        }
+        btnCar.setOnClickListener {
+            startActivity(intent2)
+        }
+        btnEletric.setOnClickListener {
+            startActivity(intent2)
+        }
+        btnWater.setOnClickListener {
+            startActivity(intent2)
+        }
     }
 }
