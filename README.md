@@ -1,5 +1,5 @@
 # FinTrack App - Hacksprint Maio/24 - DevSpace
-## EM DESENVOLVIMENTO
+## EM DESENVOLVIMENTO...
 Esse projeto é um aplicativo Android Nativo desenvolvido com a linguagem de programação Kotlin, tem como principal funcionalidade, fazer o cálculo do gasto mensal de um usurario, colocar uma etiqueta e um icone colorido, exibi os itens em lista na tela inicial e exibir o valor total gasto mensal no cabeçalho.
 <br><br>
 Aplicativo desenvolvido na Hacksprint do DevSpace pelos Alunos Anderson, Bruno e Laion.
